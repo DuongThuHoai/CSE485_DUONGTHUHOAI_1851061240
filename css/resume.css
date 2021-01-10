@@ -214,7 +214,7 @@ h2{
     padding: 0 40px;
   }
   .content__container:before {
-    content: "&heart";
+    content: "[";
     left: 0;
   }
   .content__container:after {
