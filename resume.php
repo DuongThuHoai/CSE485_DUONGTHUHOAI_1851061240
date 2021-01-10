@@ -28,7 +28,7 @@
         <h2>
           Trình độ học vấn
         </h2>
-        <blockquote>
+        <blockquote style="margin-top: 30px;">
           <p>Trường Đại học Thủy Lợi - Chuyên ngành Công nghệ thông tin <br> Sinh viên năm 3
           </p>
           <footer>8/2018 - <cite>6/2023</cite></footer>
@@ -44,16 +44,38 @@
             </ul>
           </div>
         </div>
-        <h2 style ="margin-top : 180px;">
-          Kĩ năng
-        </h2>
+    </section>
+   
+    <section class="experiences">
+       
         <div class="experience">
+          <div class="level">
+          <h1>Kĩ Năng</h1>
+          </div>
           <div class="bar"> </div>
-          <div class="points">15/100</div>
-          <div class="level">html</div>
+          <div class="points">20%</div>
+          <div class="level">html/css</div>
         </div>
-      </div>
-      
+        <div class="experience">
+          <div class="bar_1"></div>
+          <div class="points">10%</div>
+          <div class="level">php</div>
+        </div>
+        <div class="experience">
+          <div class="bar_2"></div>
+          <div class="points">30%</div>
+          <div class="level">sql/mysql</div>
+        </div>
+        <div class="experience">
+          <div class="bar_3"></div>
+          <div class="points">30%</div>
+          <div class="level">c#/c++</div>
+        </div>
+        <div class="experience">
+          <div class="bar_3"></div>
+          <div class="points">30%</div>
+          <div class="level">English</div>
+        </div>
     </section>
     <footer>
         <?php include('footer.php'); ?>
@@ -66,115 +88,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<!-- .experience
-  .bar 
-  .points 20/100
-  .level html/css
-.experience
-  .bar_1
-  .points_1 10/100
-  .level php
-.experience
-  .bar_2
-  .points_2 40/100
-  .level_2 sql/mysql
-.experience
-  .bar_3
-  .points_3 30/100
-  .level_3 c#/c++
-.experience
-  .bar_4
-  .points_4 30/100
-  .level_4 English -->
-<!-- 
-  body {
-  background-color: hsl(205°, 65%, 34%);
-}
-
-.experience {
-  position: relative;
-  margin: 4em auto;
-  max-width: 500px;
-  height: 2em;
-  background: hsl(205, 65%, 14%);
-  border-radius: 5px;
-  box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.5);
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
-  text-shadow: 0 0.15em 0.15em rgba(0,0,0,0.8);
-  .bar {
-    margin-left: calc(3em - 10px);
-    height: 100%;
-    width:26%;
-    background: linear-gradient(0deg, hsl(205, 100%, 50%), hsl(205, 100%, 68%));
-    border-radius: 5px;
-  }
-  .points {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-  }
-  .level {
-    position: absolute;
-    height: 2em;
-    width: 4.4em;
-    top: -0.5em;
-    left: -0.5em;
-    background: linear-gradient(45deg, hsl(205, 100%, 50%), hsl(205, 100%, 68%));
-    box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8em;
-    border-radius: 8px;
-  }
-}
-  .bar_1 {
-    margin-left: calc(3em - 10px);
-    height: 100%;
-    width:20%;
-    background: linear-gradient(0deg, hsl(205, 100%, 50%), hsl(205, 100%, 68%));
-    border-radius: 5px;
-  }
-  .bar_2 {
-    margin-left: calc(3em - 10px);
-    height: 100%;
-    width:40%;
-    background: linear-gradient(0deg, hsl(205, 100%, 50%), hsl(205, 100%, 68%));
-    border-radius: 5px;
-  }
-.level_2 {
-    position: absolute;
-    height: 2em;
-    width: 6em;
-    top: -0.5em;
-    left: -0.5em;
-    background: linear-gradient(45deg, hsl(205, 100%, 50%), hsl(205, 100%, 68%));
-    box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8em;
-    border-radius: 8px;
-  }
-.level_3 {
-    position: absolute;
-    height: 2em;
-    width: 4em;
-    top: -0.5em;
-    left: -0.5em;
-    background: linear-gradient(45deg, hsl(205, 100%, 50%), hsl(205, 100%, 68%));
-    box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8em;
-    border-radius: 8px;
-  } -->

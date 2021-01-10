@@ -26,7 +26,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 ">
-            <img alt="photo" src="css/image/132332929_1061317914378163_5287285100703613006_n.jpg" class="rounded-circle" />
+            <img alt="photo" src="css/image/flow.jpeg" class="rounded-circle" />
           </div>
           <div class="col-md-6 ">
             <h1 class="hi">Hi There!<br> I’m Dương Thu Hoài <br> 		&hearts;Daisy Thu&hearts;</h1>
