@@ -21,7 +21,7 @@
   <div id="block-webform-client-block-22" class="block block-webform form-contact animation-contact contextual-links-region">
     <h2 class="text-center">Contact me</h2>
     <div class="content">
-      <form class="webform-client-form-webform-client-form-22" action="/content/kontakty" method="post" id="webform-client-form-22" accept-charset="UTF-8">
+      <form class="webform-client-form-webform-client-form-22" action="process-contact.php" method="post" id="webform-client-form-22" accept-charset="UTF-8">
         <div class="form-mail-wrap">
           <div id="mail-svg-bottom">
             <svg version="1.1" id="svg-full-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 660 400" style="enable-background:new 0 0 660 400;" xml:space="preserve">
@@ -57,20 +57,20 @@
             </div>
             <div class="form-contact-group form-item webform-component webform-component-textfield webform-component--name">
               <label class="element-invisible" for="edit-submitted-name">name </label>
-              <input placeholder="Enter your name" class="form-control form-contact form-text" type="text" id="edit-submitted-name" name="submitted[name]" value="" size="60" maxlength="50">
+              <input placeholder="Enter your name" class="form-control form-contact form-text" type="text" id="edit-submitted-name" name="name" value="" size="60" maxlength="50">
             </div>
             <div class="form-contact-group form-item webform-component webform-component-textfield webform-component--phone">
-              <label class="element-invisible" for="edit-submitted-phone">phone <span class="form-required" title="phone">*</span></label>
-              <input required="required" placeholder="Enter your number phone " class="form-control form-contact form-text required" type="text" id="edit-submitted-phone" name="submitted[phone]" value="" size="60" maxlength="25">
+              <label class="element-invisible" for="edit-submitted-phone">phone <span class="form-required" title="phone"></span></label>
+              <input required="required" placeholder="Enter your phone number " class="form-control form-contact form-text required" type="text" id="edit-submitted-phone" name="phone" value="" size="60" maxlength="25">
             </div>
             <div class="form-contact-group form-item webform-component webform-component-email webform-component--email">
               <label class="element-invisible" for="edit-submitted-email">E-mail </label>
-              <input class="email form-control form-contact form-text form-email" placeholder="E-mail" type="email" id="edit-submitted-email" name="submitted[email]" size="60">
+              <input class="email form-control form-contact form-text form-email" placeholder="E-mail" type="email" id="edit-submitted-email" name="email" size="60">
             </div>
             <div class="form-contact-group form-item webform-component webform-component-textarea webform-component--messages">
               <label class="element-invisible" for="edit-submitted-messages">Message</label>
               <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
-                <textarea placeholder="Message" class="form-control form-contact form-textarea" id="edit-submitted-messages" name="submitted[messages]" cols="60" rows="3"></textarea>
+                <textarea placeholder="Message" class="form-control form-contact form-textarea" type="text" id="edit-submitted-messages" name="message" cols="60" rows="3"></textarea>
                 <div class="grippie"></div>
               </div>
             </div>
