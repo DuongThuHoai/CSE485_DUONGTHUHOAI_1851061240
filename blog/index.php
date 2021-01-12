@@ -3,7 +3,7 @@ include("path.php");
 include(ROOT_PATH . "/app/controllers/topics.php");
 
 $posts = array();
-$postsTitle = 'Recent Posts';
+$postsTitle = 'Một số bài viết';
 
 if (isset($_GET['t_id'])) {
   $posts = getPostsByTopicId($_GET['t_id']);
@@ -29,7 +29,8 @@ if (isset($_GET['t_id'])) {
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 
   <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -49,7 +50,7 @@ if (isset($_GET['t_id'])) {
 
     <!-- Post Slider -->
     <div class="post-slider">
-      <h1 class="slider-title">Some Vegetables</h1>
+      <h1 class="slider-title">Một vài loại thực phẩm</h1>
       <i class="fas fa-chevron-left prev"></i>
       <i class="fas fa-chevron-right next"></i>
 
@@ -91,7 +92,7 @@ if (isset($_GET['t_id'])) {
               <p class="preview-text">
                 <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
               </p>
-              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
+              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Đọc thêm</a>
             </div>
           </div>    
         <?php endforeach; ?>
@@ -104,7 +105,7 @@ if (isset($_GET['t_id'])) {
       <div class="sidebar">
 
         <div class="section search">
-          <h2 class="section-title">Search</h2>
+          <h2 class="section-title">Tìm kiếm</h2>
           <form action="index.php" method="post">
             <input type="text" name="search-term" class="text-input" placeholder="Search...">
           </form>
@@ -112,7 +113,7 @@ if (isset($_GET['t_id'])) {
 
 
         <div class="section topics">
-          <h2 class="section-title">Topics</h2>
+          <h2 class="section-title">Chủ đề</h2>
           <ul>
             <?php foreach ($topics as $key => $topic): ?>
               <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>

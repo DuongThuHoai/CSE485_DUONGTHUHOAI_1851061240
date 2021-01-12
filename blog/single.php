@@ -22,8 +22,8 @@ $posts = selectAll('posts', ['published' => 1]);
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
   <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -60,16 +60,8 @@ $posts = selectAll('posts', ['published' => 1]);
 
       <!-- Sidebar -->
       <div class="sidebar single">
-
-        <div class="fb-page" data-href="https://web.facebook.com/codingpoets/" data-small-header="false"
-          data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://web.facebook.com/codingpoets/" class="fb-xfbml-parse-ignore"><a
-              href="https://web.facebook.com/codingpoets/">Coding Poets</a></blockquote>
-        </div>
-
-
         <div class="section popular">
-          <h2 class="section-title">Popular</h2>
+          <h2 class="section-title">Phổ biến</h2>
 
           <?php foreach ($posts as $p): ?>
             <div class="post clearfix">
@@ -84,7 +76,7 @@ $posts = selectAll('posts', ['published' => 1]);
         </div>
 
         <div class="section topics">
-          <h2 class="section-title">Topics</h2>
+          <h2 class="section-title">Chủ đề</h2>
           <ul>
             <?php foreach ($topics as $topic): ?>
               <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>

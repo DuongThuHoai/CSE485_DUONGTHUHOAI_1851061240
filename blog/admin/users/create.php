@@ -17,16 +17,15 @@ adminOnly();
             crossorigin="anonymous">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
-            rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
         <!-- Custom Styling -->
         <link rel="stylesheet" href="../../assets/css/style.css">
 
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Add User</title>
+        <title>Phần quản trị - Thêm</title>
     </head>
 
     <body>
@@ -42,14 +41,14 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add User</a>
-                    <a href="index.php" class="btn btn-big">Manage Users</a>
+                    <a href="create.php" class="btn btn-big">Thêm</a>
+                    <a href="index.php" class="btn btn-big">Quản trị người dùng</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Add User</h2>
+                    <h2 class="page-title">Thêm</h2>
 
                     <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
@@ -86,7 +85,7 @@ adminOnly();
                         </div>
 
                         <div>
-                            <button type="submit" name="create-admin" class="btn btn-big">Add User</button>
+                            <button type="submit" name="create-admin" class="btn btn-big">Thêm</button>
                         </div>
                     </form>
 

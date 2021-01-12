@@ -17,16 +17,15 @@ adminOnly();
             crossorigin="anonymous">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
-            rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
         <!-- Custom Styling -->
         <link rel="stylesheet" href="../../assets/css/style.css">
 
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Manage Users</title>
+        <title>Phần quản trị - Quản trị người dùng</title>
     </head>
 
     <body>
@@ -42,20 +41,20 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add User</a>
-                    <a href="index.php" class="btn btn-big">Manage Users</a>
+                    <a href="create.php" class="btn btn-big">Thêm</a>
+                    <a href="index.php" class="btn btn-big">Quản trị người dùng</a>
                 </div>
                 <div class="content">
-                    <h2 class="page-title">Manage Users</h2>
+                    <h2 class="page-title">Quản trị người dùng</h2>
 
                     <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
 
                     <table>
                         <thead>
-                            <th>SN</th>
-                            <th>Username</th>
+                            <th>STT</th>
+                            <th>Tên người dùng</th>
                             <th>Email</th>
-                            <th colspan="2">Action</th>
+                            <th colspan="2">Hoạt động</th>
                         </thead>
                         <tbody>
                             <?php foreach ($admin_users as $key => $user): ?>
@@ -63,8 +62,8 @@ adminOnly();
                                     <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $user['username']; ?></td>
                                     <td><?php echo $user['email']; ?></td>
-                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
+                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">sửa</a></td>
+                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">xóa</a></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

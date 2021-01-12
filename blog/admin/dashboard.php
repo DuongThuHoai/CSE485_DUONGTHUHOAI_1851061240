@@ -17,8 +17,8 @@ adminOnly();
             crossorigin="anonymous">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
-            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 
         <!-- Custom Styling -->
         <link rel="stylesheet" href="../assets/css/style.css">
@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../assets/css/admin.css">
 
-        <title>Admin Section - Dashboard</title>
+        <title>Phần quản trị - Quản trị</title>
     </head>
 
     <body>
@@ -44,7 +44,7 @@ adminOnly();
 
                 <div class="content">
 
-                    <h2 class="page-title">Dashboard</h2>
+                    <h2 class="page-title">Quản trị</h2>
 
                     <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>
 

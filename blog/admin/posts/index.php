@@ -17,8 +17,8 @@ adminOnly();
             crossorigin="anonymous">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
-            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 
         <!-- Custom Styling -->
         <link rel="stylesheet" href="../../assets/css/style.css">
@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Manage Posts</title>
+        <title>Phần quản trị - Quản trị bài viết</title>
     </head>
 
     <body>
@@ -42,32 +42,32 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="index.php" class="btn btn-big">Manage Posts</a>
+                    <a href="create.php" class="btn btn-big">Thêm bài viết</a>
+                    <a href="index.php" class="btn btn-big">Quản trị bài viết</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Manage Posts</h2>
+                    <h2 class="page-title">Quản trị bài viết</h2>
 
                     <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
 
                     <table>
                         <thead>
-                            <th>SN</th>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th colspan="3">Action</th>
+                            <th>STT</th>
+                            <th>Tiêu đề</th>
+                            <th>Tác giả</th>
+                            <th colspan="3">Hoạt động</th>
                         </thead>
                         <tbody>
                             <?php foreach ($posts as $key => $post): ?>
                                 <tr>
                                     <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $post['title'] ?></td>
-                                    <td>Awa</td>
-                                    <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">delete</a></td>
+                                    <td>hoai</td>
+                                    <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="edit">sửa</a></td>
+                                    <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">xóa</a></td>
 
                                     <?php if ($post['published']): ?>
                                         <td><a href="edit.php?published=0&p_id=<?php echo $post['id'] ?>" class="unpublish">unpublish</a></td>

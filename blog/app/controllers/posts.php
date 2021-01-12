@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
 if (isset($_GET['delete_id'])) {
     adminOnly();
     $count = delete($table, $_GET['delete_id']);
-    $_SESSION['message'] = "Post deleted successfully";
+    $_SESSION['message'] = "Đã xóa bài viết";
     $_SESSION['type'] = "success";
     header("location: " . BASE_URL . "/admin/posts/index.php"); 
     exit();
@@ -41,7 +41,7 @@ if (isset($_GET['published']) && isset($_GET['p_id'])) {
     $published = $_GET['published'];
     $p_id = $_GET['p_id'];
     $count = update($table, $p_id, ['published' => $published]);
-    $_SESSION['message'] = "Post published state changed!";
+    $_SESSION['message'] = "Thay đổi trạng thái thành công";
     $_SESSION['type'] = "success";
     header("location: " . BASE_URL . "/admin/posts/index.php"); 
     exit();
@@ -62,10 +62,10 @@ if (isset($_POST['add-post'])) {
         if ($result) {
            $_POST['image'] = $image_name;
         } else {
-            array_push($errors, "Failed to upload image");
+            array_push($errors, "Lỗi tải  ảnh");
         }
     } else {
-       array_push($errors, "Post image required");
+       array_push($errors, "Hãy tải ảnh");
     }
     if (count($errors) == 0) {
         unset($_POST['add-post']);
@@ -74,7 +74,7 @@ if (isset($_POST['add-post'])) {
         $_POST['body'] = htmlentities($_POST['body']);
     
         $post_id = create($table, $_POST);
-        $_SESSION['message'] = "Post created successfully";
+        $_SESSION['message'] = "Bài viết đã được tạo";
         $_SESSION['type'] = "success";
         header("location: " . BASE_URL . "/admin/posts/index.php"); 
         exit();    
@@ -100,10 +100,10 @@ if (isset($_POST['update-post'])) {
         if ($result) {
            $_POST['image'] = $image_name;
         } else {
-            array_push($errors, "Failed to upload image");
+            array_push($errors, "Tải ảnh thất bại");
         }
     } else {
-       array_push($errors, "Post image required");
+       array_push($errors, "Mời tải ảnh");
     }
 
     if (count($errors) == 0) {
@@ -114,7 +114,7 @@ if (isset($_POST['update-post'])) {
         $_POST['body'] = htmlentities($_POST['body']);
     
         $post_id = update($table, $id, $_POST);
-        $_SESSION['message'] = "Post updated successfully";
+        $_SESSION['message'] = "Cập nhật thành công";
         $_SESSION['type'] = "success";
         header("location: " . BASE_URL . "/admin/posts/index.php");       
     } else {

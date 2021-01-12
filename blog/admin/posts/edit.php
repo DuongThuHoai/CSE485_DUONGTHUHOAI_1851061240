@@ -17,8 +17,8 @@ adminOnly();
             crossorigin="anonymous">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
-            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 
         <!-- Custom Styling -->
         <link rel="stylesheet" href="../../assets/css/style.css">
@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Edit Post</title>
+        <title>Phần quản trị - Sửa bài viết</title>
     </head>
 
     <body>
@@ -42,33 +42,33 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="index.php" class="btn btn-big">Manage Posts</a>
+                    <a href="create.php" class="btn btn-big">Thêm bài viết</a>
+                    <a href="index.php" class="btn btn-big">Quản trị bài viết</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Edit Post</h2>
+                    <h2 class="page-title">Sửa bài viết</h2>
 
                     <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
                     <form action="edit.php" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="<?php echo $id ?>">
                         <div>
-                            <label>Title</label>
+                            <label>Tiêu đề</label>
                             <input type="text" name="title" value="<?php echo $title ?>" class="text-input">
                         </div>
                         <div>
-                            <label>Body</label>
+                            <label>Nội dung</label>
                             <textarea name="body" id="body"><?php echo $body ?></textarea>
                         </div>
                         <div>
-                            <label>Image</label>
+                            <label>Ảnh</label>
                             <input type="file" name="image" class="text-input">
                         </div>
                         <div>
-                            <label>Topic</label>
+                            <label>Chủ đề</label>
                             <select name="topic_id" class="text-input">
                                 <option value=""></option>
                                 <?php foreach ($topics as $key => $topic): ?>
@@ -85,19 +85,19 @@ adminOnly();
                             <?php if (empty($published) && $published == 0): ?>
                                 <label>
                                     <input type="checkbox" name="published">
-                                    Publish
+                                    Đăng
                                 </label>
                             <?php else: ?>
                                 <label>
                                     <input type="checkbox" name="published" checked>
-                                    Publish
+                                    Đăng
                                 </label>
                             <?php endif; ?>
                            
 
                         </div>
                         <div>
-                            <button type="submit" name="update-post" class="btn btn-big">Update Post</button>
+                            <button type="submit" name="update-post" class="btn btn-big">Cập nhật bài viết</button>
                         </div>
                     </form>
 

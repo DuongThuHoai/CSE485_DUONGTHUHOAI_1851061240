@@ -23,7 +23,7 @@ function loginUser($user)
     $_SESSION['id'] = $user['id'];
     $_SESSION['username'] = $user['username'];
     $_SESSION['admin'] = $user['admin'];
-    $_SESSION['message'] = 'You are now logged in';
+    $_SESSION['message'] = 'Đăng nhập thành công';
     $_SESSION['type'] = 'success';
 
     if ($_SESSION['admin']) {
@@ -44,7 +44,7 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin'])) {
         if (isset($_POST['admin'])) {
             $_POST['admin'] = 1;
             $user_id = create($table, $_POST);
-            $_SESSION['message'] = 'Admin user created';
+            $_SESSION['message'] = 'Đã thêm admin';
             $_SESSION['type'] = 'success';
             header('location: ' . BASE_URL . '/admin/users/index.php'); 
             exit();
@@ -74,7 +74,7 @@ if (isset($_POST['update-user'])) {
         
         $_POST['admin'] = isset($_POST['admin']) ? 1 : 0;
         $count = update($table, $id, $_POST);
-        $_SESSION['message'] = 'Admin user created';
+        $_SESSION['message'] = 'Đã thêm admin';
         $_SESSION['type'] = 'success';
         header('location: ' . BASE_URL . '/admin/users/index.php'); 
         exit();
@@ -108,7 +108,7 @@ if (isset($_POST['login-btn'])) {
         if ($user && password_verify($_POST['password'], $user['password'])) {
             loginUser($user);
         } else {
-           array_push($errors, 'Wrong credentials');
+           array_push($errors, 'Sai thông tin');
         }
     }
 
@@ -119,7 +119,7 @@ if (isset($_POST['login-btn'])) {
 if (isset($_GET['delete_id'])) {
     adminOnly();
     $count = delete($table, $_GET['delete_id']);
-    $_SESSION['message'] = 'Admin user deleted';
+    $_SESSION['message'] = 'Xóa thành công';
     $_SESSION['type'] = 'success';
     header('location: ' . BASE_URL . '/admin/users/index.php'); 
     exit();
