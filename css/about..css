@@ -74,12 +74,14 @@ footer{
     padding-top: 10px;
     display: flex;
     float: left;
+    /* width: 59%; */
 }
 
  ul li{
     list-style: none;
     margin: 0 20px;
     transition: 0.5s;
+  
 }
 
  ul li a{
@@ -143,12 +145,12 @@ ul li a:before{
 }
 
 svg{
-  width: 600px;
+  width: 100%;
   height: 200px;
   display: block;
   position: relative;
   overflow: hidden; 
-  margin-left: 370px;
+  margin-left: 40px;
   /* background: #cff3d588; */
 }
 text {

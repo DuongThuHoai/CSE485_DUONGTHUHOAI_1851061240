@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/activities.css">
+    <link rel="stylesheet" href="css/activities..css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,9 +18,10 @@
         <?php include('header.php'); ?>
     </header>
     <section class="content">
-        <h2>Hoạt động</h2>
+       
         <div class="container-fluid">
-          <div class="row">
+        
+          <div class="row"><h2>Hoạt động</h2>
             <div class="col-md-12">
             <div class="accordion">
           <div class="contentt">

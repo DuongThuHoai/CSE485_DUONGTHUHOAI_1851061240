@@ -3,9 +3,9 @@
     <div class="footer-content">
 
       <div class="footer-section about">
-        <h1 class="logo-text"><span>Thu</span>Hoài</h1>
+        <h1 class="logo-text"></h1>
         <p>
-          Nếu mọi người có góp ý hay thắc mắc gì, vui lòng liên hệ theo form contact <br> Xin cám ơn!
+          Nếu mọi người có góp ý hay thắc mắc gì, vui lòng liên hệ theo form bên cạnh <br> Xin cám ơn!
         </p>
         <div class="contact">
           <span><i class="fas fa-phone"></i> &nbsp; 0981972418</span>
@@ -21,14 +21,14 @@
 
 
       <div class="footer-section contact-form">
-        <h2>Contact us</h2>
+        <h2>Liên hệ với tôi</h2>
         <br>
         <form action="index.php" method="post">
-          <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
-          <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+          <input type="email" name="email" class="text-input contact-input" placeholder="Địa chỉ email...">
+          <textarea rows="4" name="message" class="text-input contact-input" placeholder="Góp ý, lời nhắn..."></textarea>
           <button type="submit" class="btn btn-big contact-btn" >
-            <i class="fas fa-envelope"></i>
-            Send
+            
+            Gửi
           </button>
         </form>
       </div>

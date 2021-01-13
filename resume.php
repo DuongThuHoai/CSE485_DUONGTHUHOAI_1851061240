@@ -1,3 +1,4 @@
+<!-- <?php include('config.php ') ?> -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/resume..css">
+    <link rel="stylesheet" href="css/resumee.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,15 +25,16 @@
         <?php include('header.php'); ?>
     </header>
     <section class="content">
-      <div class="Content">
-        <h2>
-          Trình độ học vấn
-        </h2>
-        <blockquote style="margin-top: 30px;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-12">
+        <h2>Trình độ học vấn</h2>
+        <blockquote style="margin-left: 20%; margin-bottom:0;padding-bottom:20px;">
           <p>Trường Đại học Thủy Lợi - Chuyên ngành Công nghệ thông tin <br> Sinh viên năm 3
           </p>
           <footer>8/2018 - <cite>6/2023</cite></footer>
         </blockquote>
+        <div class="col-md-12">
         <h2>Kinh nghiệm</h2>
         <div class="contentt">
           <div class="content__container">
@@ -44,38 +46,53 @@
             </ul>
           </div>
         </div>
+      </div>
+        </div>
+      </div>  
+    </div>
     </section>
-   
+    <?php
+        if(isset($_GET["id"])){
+            $id=$_GET["id"];
+        }
+      ?>
+      <?php
+        $sql_read= "SELECT * FROM resume where id=$id";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+        
+      ?>
+  
     <section class="experiences">
-       
         <div class="experience">
           <div class="level">
           <h1>Kĩ Năng</h1>
           </div>
           <div class="bar"> </div>
-          <div class="points">20%</div>
-          <div class="level">html/css</div>
+          <div class="points"><?php{echo $rows['percent'];?>%</div>
+          <div class="level"><?php echo $rows['name'];?></div>
         </div>
         <div class="experience">
           <div class="bar_1"></div>
-          <div class="points">10%</div>
-          <div class="level">php</div>
+          <div class="points"><?php echo $rows['percent'];?>%</div>
+          <div class="level"><?php echo $rows['name'];?></div>
         </div>
         <div class="experience">
           <div class="bar_2"></div>
-          <div class="points">30%</div>
-          <div class="level">sql/mysql</div>
+          <div class="points"><?php echo $rows['percent'];?>%</div>
+          <div class="level"><?php echo $rows['name'];?></div>
         </div>
         <div class="experience">
           <div class="bar_3"></div>
-          <div class="points">30%</div>
-          <div class="level">c#/c++</div>
+          <div class="points"><?php echo $rows['percent'];?>%</div>
+          <div class="level"><?php echo $rows['name'];?></div>
         </div>
         <div class="experience">
           <div class="bar_3"></div>
-          <div class="points">30%</div>
-          <div class="level">English</div>
+          <div class="points"><?php echo $rows['percent'];?>%</div>
+          <div class="level"><?php echo $rows['name'];?></div>
         </div>
+        <?php  }?>
     </section>
     <footer>
         <?php include('footer.php'); ?>
