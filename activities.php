@@ -1,3 +1,4 @@
+<?php include('config.php') ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,18 +26,25 @@
             <div class="col-md-12">
             <div class="accordion">
           <div class="contentt">
-            <div class="label">Tham gia CLB</div>
+          <?php
+        $sql_read= "SELECT * FROM activities where id = '1'";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+      ?>
+            <div class="label"><?php echo $rows['name'];?></div>
             <div class="Content">
-              <p> CLB Tiếng anh trường Đại học Thủy Lợi: Tổ chức cuộc thi tiếng anh không
-                      chuyên trong trường, tham gia làm video dự thi Olympic tiếng anh toàn
-                      quốc, hỗ trợ thực hiện kì thi olympic TA không chuyên cho sinh viên TLU, tổ chức lớp ôn thi A2...</p>
+              <p> <?php echo $rows['text'];?></p>
             </div>
           </div>
           <div class="contentt">
-            <div class="label">Tham gia tình nguyện</div>
+          <?php
+        $sql_read= "SELECT * FROM activities where id = '2'";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+      ?>
+            <div class="label"><?php echo $rows['name'];?></div>
             <div class="Content">
-              <p> Tham gia chương trình "Trung thu cho em" do đoàn trường ĐH Thủy Lợi tổ
-                  chức để quyên góp cho những trẻ em bị bệnh hiểm nghèo.</p>
+              <p><?php echo $rows['text'];?></p>
             </div>
           </div>
         </div>

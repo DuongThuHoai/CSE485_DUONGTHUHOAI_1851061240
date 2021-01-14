@@ -1,4 +1,4 @@
-<!-- <?php include('config.php ') ?> -->
+<?php include('config.php') ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,10 +29,16 @@
       <div class="row">
         <div class="col-xl-12">
         <h2>Trình độ học vấn</h2>
-        <blockquote style="margin-left: 20%; margin-bottom:0;padding-bottom:20px;">
-          <p>Trường Đại học Thủy Lợi - Chuyên ngành Công nghệ thông tin <br> Sinh viên năm 3
+        <?php
+        $sql_read= "SELECT * FROM educationn where id = '1'";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+        
+      ?>
+        <blockquote style="margin-left:20%; padding-bottom:20px;">
+          <p><?php echo $rows['addr'];?>-<?php echo $rows['name'];?> <br> <?php echo $rows['sting'];?>
           </p>
-          <footer>8/2018 - <cite>6/2023</cite></footer>
+          <footer><?php echo $rows['date'];?></footer>
         </blockquote>
         <div class="col-md-12">
         <h2>Kinh nghiệm</h2>
@@ -52,12 +58,7 @@
     </div>
     </section>
     <?php
-        if(isset($_GET["id"])){
-            $id=$_GET["id"];
-        }
-      ?>
-      <?php
-        $sql_read= "SELECT * FROM resume where id=$id";
+        $sql_read= "SELECT * FROM resume where id = '1'";
         $result = mysqli_query($conn,$sql_read);
         $rows= mysqli_fetch_array($result);
         
@@ -69,30 +70,54 @@
           <h1>Kĩ Năng</h1>
           </div>
           <div class="bar"> </div>
-          <div class="points"><?php{echo $rows['percent'];?>%</div>
+          <div class="points"><?php echo $rows['percent'];?>%</div>
           <div class="level"><?php echo $rows['name'];?></div>
         </div>
+        <?php
+        $sql_read= "SELECT * FROM resume where id = '2'";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+        
+      ?>
         <div class="experience">
           <div class="bar_1"></div>
           <div class="points"><?php echo $rows['percent'];?>%</div>
           <div class="level"><?php echo $rows['name'];?></div>
         </div>
+        <?php
+        $sql_read= "SELECT * FROM resume where id = '3'";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+        
+      ?>
         <div class="experience">
           <div class="bar_2"></div>
           <div class="points"><?php echo $rows['percent'];?>%</div>
           <div class="level"><?php echo $rows['name'];?></div>
         </div>
+        <?php
+        $sql_read= "SELECT * FROM resume where id = '4'";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+        
+      ?>
         <div class="experience">
           <div class="bar_3"></div>
           <div class="points"><?php echo $rows['percent'];?>%</div>
           <div class="level"><?php echo $rows['name'];?></div>
         </div>
+        <?php
+        $sql_read= "SELECT * FROM resume where id = '5'";
+        $result = mysqli_query($conn,$sql_read);
+        $rows= mysqli_fetch_array($result);
+        
+      ?>
         <div class="experience">
           <div class="bar_3"></div>
           <div class="points"><?php echo $rows['percent'];?>%</div>
           <div class="level"><?php echo $rows['name'];?></div>
         </div>
-        <?php  }?>
+       
     </section>
     <footer>
         <?php include('footer.php'); ?>

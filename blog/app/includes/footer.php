@@ -23,11 +23,10 @@
       <div class="footer-section contact-form">
         <h2>Liên hệ với tôi</h2>
         <br>
-        <form action="index.php" method="post">
+        <form action="http://localhost/CSE485_DUONGTHUHOAI_1851061240/process-contact.php" method="post">
           <input type="email" name="email" class="text-input contact-input" placeholder="Địa chỉ email...">
           <textarea rows="4" name="message" class="text-input contact-input" placeholder="Góp ý, lời nhắn..."></textarea>
           <button type="submit" class="btn btn-big contact-btn" >
-            
             Gửi
           </button>
         </form>

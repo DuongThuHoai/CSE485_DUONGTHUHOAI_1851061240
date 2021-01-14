@@ -21,7 +21,7 @@ $mail->isHTML(true);
 $mail->Subject = 'New message from blog';  
 $mail->Body  = '<h1>Thank you for contact <br></h1>';
 $mail->Body.="$email <br>";
-$mail->Body  .= $message;
+$mail->Body  .= "Cám ơn tôi sẽ sớm liên lạc lại với bạn, tin nhắn của bạn :  $message";
 $mail->Body  .= "<p>$name <br>$phone</p>";
 if($mail->send()) {  
 echo 'Message has been sent';  

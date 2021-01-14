@@ -1,3 +1,17 @@
+<?php 
+    include('config.php') ;
+ 
+
+    if(isset($_POST['op'])){
+      $name=$_POST['name'];
+      $phone=$_POST['phone'];
+      $email=$_POST['email'];
+      $message =$_POST['message'];
+      $sql= "INSERT into contact(name, phone, email, message) values ('$name', '$phone', '$email', '$message');";
+      mysqli_query($conn, $sql);
+  
+    }
+?>
 <!doctype html>
 <html lang="en">
   <head>

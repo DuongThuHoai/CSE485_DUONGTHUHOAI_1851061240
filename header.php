@@ -1,5 +1,5 @@
   <div class="logo">
-  <img src="css/image/logo.png" alt=""class="rounded-circle" > 
+  <a href="http://localhost/CSE485_DUONGTHUHOAI_1851061240/"><img src="css/image/logo.png" alt=""class="rounded-circle" > </a>
   </div>
     <ul>
       <li><a href="home.php">Home</a></li>
