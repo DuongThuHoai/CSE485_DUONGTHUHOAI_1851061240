@@ -5,7 +5,10 @@
       <div class="footer-section about">
         <h1 class="logo-text"></h1>
         <p>
-          Nếu mọi người có góp ý hay thắc mắc gì, vui lòng liên hệ theo form bên cạnh <br> Xin cám ơn!
+          Thiết kế giao diện của blog được tham khảo từ 
+          <a href="https://drive.google.com/drive/u/0/folders/1UA2j37LtEqZj1xbiCqX2H_x61cZdzj_1" style="color:white;">
+          Web Programing
+        </a>
         </p>
         <div class="contact">
           <span><i class="fas fa-phone"></i> &nbsp; 0981972418</span>
@@ -19,14 +22,13 @@
         </div>
       </div>
 
-
       <div class="footer-section contact-form">
         <h2>Liên hệ với tôi</h2>
         <br>
-        <form action="http://localhost/CSE485_DUONGTHUHOAI_1851061240/process-contact.php" method="post">
+        <form action="contact.php" method="post">
           <input type="email" name="email" class="text-input contact-input" placeholder="Địa chỉ email...">
           <textarea rows="4" name="message" class="text-input contact-input" placeholder="Góp ý, lời nhắn..."></textarea>
-          <button type="submit" class="btn btn-big contact-btn" >
+          <button name ="submit" type="submit" class="btn btn-big contact-btn" >
             Gửi
           </button>
         </form>

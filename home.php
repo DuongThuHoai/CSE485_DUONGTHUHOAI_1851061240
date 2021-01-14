@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="fonts"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home..css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
   </head>
@@ -29,10 +29,10 @@
             <img alt="photo" src="css/image/flow.jpeg" class="rounded-circle" />
           </div>
           <div class="col-md-6 ">
-            <h1 class="hi">Hi There!<br> I’m Dương Thu Hoài <br> 		&hearts;Daisy Thu&hearts;</h1>
+            <h1 class="hi">Xin Chào!<br> Tôi là Dương Thu Hoài <br>&hearts;Daisy Thu&hearts;</h1>
             <p class="long-copy">
-              Thanks for visiting!<br> Explore my site to learn more about me,
-  my background and what I have to offer. If you have questions or would like to discuss an opportunity to work together, feel free to get in touch.
+              Cám ơn vì đã ghé thăm CV của tôi :) <br> Hãy khám phá trang web để tìm hiểu thêm về tôi,
+  nền tảng của tôi và những gì tôi phải cung cấp. Nếu bạn có thắc mắc hoặc muốn thảo luận về cơ hội làm việc cùng nhau, vui lòng liên hệ.
             </p>
           </div>
         </div>

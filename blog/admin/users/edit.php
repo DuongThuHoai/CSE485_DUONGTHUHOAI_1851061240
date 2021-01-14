@@ -20,7 +20,7 @@ adminOnly();
         <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
         <!-- Custom Styling -->
-        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/style..css">
 
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">

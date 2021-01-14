@@ -270,7 +270,7 @@ ul li a:before{
     margin-top: 50px;
     animation-name: animation1;
     animation-duration: 4s;
-    animation-iteration-count: 4;
+    animation-iteration-count: 1;
 }
 .long-copy{
     margin-top: 20px;
@@ -278,7 +278,7 @@ ul li a:before{
     font-size: 150%;
     animation-name: animation;
     animation-duration: 4s;
-    animation-iteration-count: 4;
+    animation-iteration-count: 1;
 }
 @keyframes animation {
     0%{
