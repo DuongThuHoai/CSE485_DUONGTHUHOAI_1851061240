@@ -1,3 +1,4 @@
+<?php include('config.php') ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -119,6 +120,11 @@
               <i class="fas fa-map-marked-alt"></i>
                Phượng Cách - Quốc Oai - Hà Nội
               </li>
+              <?php
+                $sql_read= "SELECT * FROM admin where id = '1'";
+                $result = mysqli_query($conn,$sql_read);
+                $rows= mysqli_fetch_array($result);
+              ?>
               <img src="css/image/132043378_251336879706932_7603093169022024834_n.jpg" alt="img" class="imgg">
               <li class="list-itemm">
               <i class="fas fa-signature"></i>
