@@ -5,7 +5,7 @@
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
       <li><a href="<?php echo BASE_URL . '/index.php' ?>">Home</a></li>
-      <!-- <li><a href="<?php echo BASE_URL . '/about.php' ?>">About</a></li> -->
+      <!-- <li><a href="<?php echo BASE_URL . '/about.php' ?>">Admin Info</a></li> -->
       <li><a href="http://localhost/CSE485_DUONGTHUHOAI_1851061240/home.php">Back to CV</a></li>
 
       <?php if (isset($_SESSION['id'])): ?>

@@ -100,6 +100,11 @@
               <h1>
                 Thông tin cá nhân
               </h1>
+              <?php
+                $sql_read= "SELECT * FROM admin where id = '1'";
+                $result = mysqli_query($conn,$sql_read);
+                $rows= mysqli_fetch_array($result);
+              ?>
               <li class="list-item">
               <i class="far fa-calendar-alt"></i>
                30/08/2000
@@ -110,22 +115,18 @@
               </li>
               <li class="list-item">
               <i class="fas fa-phone"></i>
-               0981972418
+              <?php echo $rows['phone'];?>
               </li>
               <li class="list-item">
               <i class="fas fa-envelope-square"></i>
-               duongthuhoai30082000@gmail.com
+              <?php echo $rows['email'];?>
               </li>
               <li class="list-item">
               <i class="fas fa-map-marked-alt"></i>
-               Phượng Cách - Quốc Oai - Hà Nội
+              <?php echo $rows['addr'];?>
               </li>
-              <?php
-                $sql_read= "SELECT * FROM admin where id = '1'";
-                $result = mysqli_query($conn,$sql_read);
-                $rows= mysqli_fetch_array($result);
-              ?>
-              <img src="css/image/132043378_251336879706932_7603093169022024834_n.jpg" alt="img" class="imgg">
+              
+              <img src="<?php echo $rows['imgg'];?>" alt="img" class="imgg">
               <li class="list-itemm">
               <i class="fas fa-signature"></i>
                 hoai &mdash; daisy
