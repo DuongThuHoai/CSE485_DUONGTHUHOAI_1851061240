@@ -6,8 +6,8 @@
         <h1 class="logo-text"></h1>
         <p>
           Thiết kế giao diện của blog được tham khảo từ 
-          <a href="https://drive.google.com/drive/u/0/folders/1UA2j37LtEqZj1xbiCqX2H_x61cZdzj_1" style="color:white;">
-          Web Programing
+          <a href="https://www.youtube.com/watch?v=fPYOhQn95fw&list=PL3pyLl-dgiqD0eKYJ-XSxrHaRh-zsA2tP" style="color:white;">
+          Awa Melvine
         </a>
         </p>
         <div class="contact">
